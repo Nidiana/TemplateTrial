@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .hidden {
+      display: none;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1rem;
+      align-items: center;
+      justify-items: center;
+      height: 500px; /* Adjust the height as needed */
+      background-color: rgb(238, 130, 238);
+      position: relative;
+    }
+
+    .myButton {
+      width: 60%;
+      height: 40%;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      position: relative;
+      grid-row: 2;
+      background-position: center;
+      background-color: rgb(91, 10, 145);
+      color: white;
+    }
+
+    .myImage {
+      width: 100% !important;
+      height: 100% !important;
+      grid-row: 1;
+      position: relative;
+    }
+
+    .imageCaption {
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .imageText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      width: 80%;
+    }
+
+    .title {
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+<script>
+    function toggleImage(imageId) {
+      var image = document.getElementById(imageId);
+      image.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body>
+<h1 class="title">CIV 107 Hydraulic Principles and Flow in Pipe</h1>
+<h1 class="sub title">Experimental Labs</h1>
+<div class="container">
+<button class="myButton" onclick="toggleImage('image1')" style="grid-column: 1;">Hydrostatic</button>
+<button class="myButton" onclick="toggleImage('image2')" style="grid-column: 2;">Forces on Submerged surfaces</button>
+<button class="myButton" onclick="toggleImage('image3')" style="grid-column: 3;">Floating Stability</button>
+<button class="myButton" onclick="toggleImage('image4')" style="grid-column: 4;">Bernoulli Equation</button>
+<button class="myButton" onclick="toggleImage('image5')" style="grid-column: 5;">Impact of Jets</button>
+
+<figure>
+  <img class="hidden myImage" id="image1" **src="pressure.gif"** style="grid-column: 1;"/>
+  <figcaption class="imageCaption">Image 1 Reference</figcaption>
+  <div class="imageText">Text Overlay 1</div>
+</figure>
+
+<figure>
+  <img class="hidden myImage" id="image2" **src="forces.jpg"** style="grid-column: 2;"/>
+  <figcaption class="imageCaption">Image 2 Reference</figcaption>
+  <div class="imageText">Text Overlay 2</div>
+</figure>
+
+<figure>
+  <img class="hidden myImage" id="image3" **src="floating.png"** style="grid-column: 3;"/>
+  <figcaption class="imageCaption">Image 3 Reference</figcaption>
+  <div class="imageText">Text Overlay 3</div>
+</figure>
+
+<figure>
+  <img class="hidden myImage" id="image4" **src="Orifice.png"** style="grid-column: 4;"/>
+  <figcaption class="imageCaption">Image 4 Reference</figcaption>
+  <div class="imageText">Text Overlay 4</div>
+</figure>
+
+<figure>
+  <img class="hidden myImage" id="image5" **src="jets.jpg"** style="grid-column: 5;"/>
+  <figcaption class="imageCaption">Image 5 Reference</figcaption>
+  <div class="imageText">Text Overlay 5</div>
+</figure>
+
+</div>
+</body>
+</html>
