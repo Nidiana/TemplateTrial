@@ -12,7 +12,7 @@
       grid-gap: 1rem;
       align-items: center;
       justify-items: center;
-      height: 500px; /* Adjust the height as needed */
+      height: 500px;
       background-color: rgb(238, 130, 238);
       position: relative;
     }
@@ -58,54 +58,54 @@
       text-align: center;
       margin-top: 10px;
     }
-  </style>
+</style>
 <script>
     function toggleImage(imageId) {
       var image = document.getElementById(imageId);
       image.classList.toggle("hidden");
     }
-  </script>
+</script>
 </head>
 <body>
 <h1 class="title">CIV 107 Hydraulic Principles and Flow in Pipe</h1>
 <h1 class="sub title">Experimental Labs</h1>
 <div class="container">
-<button class="myButton" onclick="toggleImage('image1')" style="grid-column: 1;">Hydrostatic</button>
-<button class="myButton" onclick="toggleImage('image2')" style="grid-column: 2;">Forces on Submerged surfaces</button>
-<button class="myButton" onclick="toggleImage('image3')" style="grid-column: 3;">Floating Stability</button>
-<button class="myButton" onclick="toggleImage('image4')" style="grid-column: 4;">Bernoulli Equation</button>
-<button class="myButton" onclick="toggleImage('image5')" style="grid-column: 5;">Impact of Jets</button>
+  <button class="myButton" onclick="toggleImage('image1')" style="grid-column: 1;">Hydrostatic</button>
+  <button class="myButton" onclick="toggleImage('image2')" style="grid-column: 2;">Forces on Submerged Surfaces</button>
+  <button class="myButton" onclick="toggleImage('image3')" style="grid-column: 3;">Floating Stability</button>
+  <button class="myButton" onclick="toggleImage('image4')" style="grid-column: 4;">Bernoulli Equation</button>
+  <button class="myButton" onclick="toggleImage('image5')" style="grid-column: 5;">Impact of Jets</button>
 
-<figure>
-  <img class="hidden myImage" id="image1" **src="pressure.gif"** style="grid-column: 1;"/>
-  <figcaption class="imageCaption">Image 1 Reference</figcaption>
-  <div class="imageText">Text Overlay 1</div>
-</figure>
+  <figure>
+    <img class="hidden myImage" id="image1" src="images/pressure.gif" style="grid-column: 1;"/>
+    <figcaption class="imageCaption">Image 1 Reference</figcaption>
+    <div class="imageText">Text Overlay 1</div>
+  </figure>
 
-<figure>
-  <img class="hidden myImage" id="image2" **src="forces.jpg"** style="grid-column: 2;"/>
-  <figcaption class="imageCaption">Image 2 Reference</figcaption>
-  <div class="imageText">Text Overlay 2</div>
-</figure>
+  <figure>
+    <img class="hidden myImage" id="image2" src="images/forces.jpg" style="grid-column: 2;"/>
+    <figcaption class="imageCaption">Image 2 Reference</figcaption>
+    <div class="imageText">Text Overlay 2</div>
+  </figure>
 
-<figure>
-  <img class="hidden myImage" id="image3" **src="floating.png"** style="grid-column: 3;"/>
-  <figcaption class="imageCaption">Image 3 Reference</figcaption>
-  <div class="imageText">Text Overlay 3</div>
-</figure>
+  <figure>
+    <img class="hidden myImage" id="image3" src="images/floating.png" style="grid-column: 3;"/>
+    <figcaption class="imageCaption">Image 3 Reference</figcaption>
+    <div class="imageText">Text Overlay 3</div>
+  </figure>
 
-<figure>
-  <img class="hidden myImage" id="image4" **src="Orifice.png"** style="grid-column: 4;"/>
-  <figcaption class="imageCaption">Image 4 Reference</figcaption>
-  <div class="imageText">Text Overlay 4</div>
-</figure>
+  <figure>
+    <img class="hidden myImage" id="image4" src="images/Orifice.png" style="grid-column: 4;"/>
+    <figcaption class="imageCaption">Image 4 Reference</figcaption>
+    <div class="imageText">Text Overlay 4</div>
+  </figure>
 
-<figure>
-  <img class="hidden myImage" id="image5" **src="jets.jpg"** style="grid-column: 5;"/>
-  <figcaption class="imageCaption">Image 5 Reference</figcaption>
-  <div class="imageText">Text Overlay 5</div>
-</figure>
-
+  <figure>
+    <img class="hidden myImage" id="image5" src="images/jets.jpg" style="grid-column: 5;"/>
+    <figcaption class="imageCaption">Image 5 Reference</figcaption>
+    <div class="imageText">Text Overlay 5</div>
+  </figure>
 </div>
 </body>
 </html>
+
